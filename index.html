@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>粘粘 - 像素电子宠物</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>粘粘 — 电子宠物猫</h1>
+    <div class="game-area">
+      <canvas id="game" width="128" height="128"></canvas>
+      <div class="status">
+        <div id="name">名字：粘粘</div>
+        <div id="stats">
+          <div>饥饿: <span id="hunger"></span></div>
+          <div>口渴: <span id="thirst"></span></div>
+          <div>心情: <span id="happiness"></span></div>
+          <div>体力: <span id="energy"></span></div>
+          <div>清洁: <span id="cleanliness"></span></div>
+        </div>
+        <div id="message" class="message">你好，粘粘在这里。</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="feedBtn">喂食</button>
+      <button id="waterBtn">喂水</button>
+      <button id="playBtn">玩耍</button>
+      <button id="petBtn">抚摸</button>
+      <button id="cleanBtn">清理</button>
+      <button id="sleepBtn">让粘粘睡觉 / 醒来</button>
+      <button id="resetBtn">重置存档</button>
+    </div>
+
+    <footer>
+      <p>这是一个简易纪念版。如果你想加上你朋友猫的照片、台词或回忆，我可以帮你扩展。</p>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
